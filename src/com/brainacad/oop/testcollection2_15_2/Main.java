@@ -18,5 +18,6 @@ public class Main {
         for (String ell:list) {
             System.out.println(ell);
         }
+
     }
 }
