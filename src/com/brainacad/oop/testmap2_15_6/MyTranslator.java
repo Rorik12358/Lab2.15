@@ -8,15 +8,14 @@ import java.util.HashMap;
 public class MyTranslator {
     private HashMap<String, String> dictionary;
 
-    public MyTranslator(HashMap<String, String> dictionary) {
-        this.dictionary = dictionary;
+    {
+        dictionary = new HashMap<>();
     }
-
     public void addNewWord(String en, String ru) {
         dictionary.put(en, ru);
     }
 
     public String translate(String en) {
-        return "need ro solve";
+        return dictionary.get(en);
     }
 }
